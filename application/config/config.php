@@ -7,8 +7,8 @@
 |
 | URL to your CodeIgniter root. Typically this will be your base URL,
 | WITH a trailing slash:
-|
-|	http://example.com/
+| 
+|	http://example.com//
 |
 | If this is not set then CodeIgniter will try to guess the protocol, domain
 | and path to your installation. However, you should always configure this
