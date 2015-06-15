@@ -4,21 +4,21 @@
             <div class="row center">
                 <img src="<?php echo base_url("assets/imagens/9525_logomarca.png");?>" />
             </div>
-            <form action="<?php echo base_url("admin/login");?>" class="loginform">
+            <form action="<?php echo base_url("login/autenticar");?>" method="post" class="loginform">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
+                        <input name="email" id="email" type="email" class="validate">
                         <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="senha" type="password" class="validate">
+                        <input name="senha" id="senha" type="password" class="validate">
                         <label for="senha">Senha</label>
                     </div>
                 </div>
                 
-                <button class="btn waves-effect waves-light" type="submit" name="action">Entrar no sistema
+                <button class="btn waves-effect waves-light" type="submit">Entrar no sistema
                     <i class="mdi-content-send right"></i>
                 </button>
             </form>
