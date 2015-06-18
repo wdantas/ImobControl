@@ -6,16 +6,20 @@ class LoginAdmin extends CI_Model {
     }
     
     public function setLogin($login, $senha){
-        if($this->verificaLogin($login, $senha)->num_rows() == 1):
+        $loginResult = $this->verificaLogin($login, $senha);
+        $dataLogin = $loginResult->result_array();
+        if($loginResult->num_rows() == 1):
             $sessionUser = array(
                 'email' => $login,
+                'nivel_acesso' => $dataLogin[0]['config_niveis_acesso_nivel_acesso'],
+                'idcorretor' => $dataLogin[0]['corretor_idcorretor'],
                 'admin_logged_in' => true 
             );
             $this->session->set_userdata($sessionUser);
             redirect(base_url('dashboard'), 'refresh');
         else:
             return false;
-            //$this->session->sess_destroy();
+            $this->session->sess_destroy();
         endif;
         
     }
