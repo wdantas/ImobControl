@@ -2,7 +2,7 @@
 
 class RecursosProximos extends CI_Controller {
     //put your code here
-    public function __construct() {
+    public function __construct() { 
         parent::__construct();
         $this->VerificarLogin->verify();
     }
@@ -15,7 +15,8 @@ class RecursosProximos extends CI_Controller {
         
         
         $tabela['registros'] = $this->GetAll->registros('recursos_proximos');
-        $tabela['editar'] = 'config/recursosproximos/editar';
+        $tabela['link'] = 'config/recursosproximos/';
+        $tabela['idRegistro'] = 'idrecursos_proximos_proximos';
         $tabela['headers'] = array('ID', 'Recurso', 'Slug', 'Filtro');
         
         $this->Theme->header();
