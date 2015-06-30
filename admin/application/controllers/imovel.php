@@ -7,28 +7,28 @@ class Imovel extends CI_Controller {
     }
     
     public function index() {
-        $this->load->view('header');
-        $this->load->view('header_menu');
+        $this->Theme->header('Imóveis');
         $this->load->view('imovel/index');
-        $this->load->view('footer');
+        $this->Theme->footer();
+        
     }
     public function editar() {
-        $this->load->view('header');
-        $this->load->view('header_menu');
+        $this->Theme->header('Editar Imóvel');
         $this->load->view('imovel/editar');
-        $this->load->view('footer');
+        $this->Theme->footer();
     }
     public function inserir($idImovel = null) {
-        $this->load->view('header');
-        $this->load->view('header_menu');
+        $this->Theme->header('Inserir Imóvel');
         $this->load->view('imovel/inserir');
-        $this->load->view('footer');
+        $this->Theme->footer();
     }
     public function buscar() {
-        $this->load->view('header');
-        $this->load->view('header_menu');
+        $this->Theme->header('Buscar Imóveis');
         $this->load->view('imovel/buscar');
-        $this->load->view('footer');
+        $this->Theme->footer();
+
     }
+    
+
     
 }

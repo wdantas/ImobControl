@@ -18,8 +18,8 @@ class LoginAdmin extends CI_Model {
             $this->session->set_userdata($sessionUser);
             redirect(base_url('dashboard'), 'refresh');
         else:
-            return false;
             $this->session->sess_destroy();
+            redirect(base_url('login'), 'refresh');
         endif;
         
     }

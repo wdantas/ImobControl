@@ -1,4 +1,5 @@
-        <ul id="imoveis" class="dropdown-content">
+<header>
+    <ul id="imoveis" class="dropdown-content">
             <li><a href="<?php echo base_url('imovel/inserir');?>">Inserir</a></li>
             <li class="divider"></li>
             <li><a href="<?php echo base_url('imovel/buscar');?>">Buscar</a></li>  
@@ -24,6 +25,8 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="<?php echo base_url('logout');?>">Sair</a></li>
                 </ul>
+                
+                <?php /*Menu mobile*/ ?>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="<?php echo base_url();?>">Dashboard</a></li>
                     <li><a href="<?php echo base_url();?>">Imóveis</a></li>
@@ -31,3 +34,5 @@
                 </ul>
             </div>
         </nav>
+</header>
+<main>

@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = "dashboard";
+$route['config'] = 'config/confighome';
 $route['404_override'] = '';
 
 

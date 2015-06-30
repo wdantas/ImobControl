@@ -11,10 +11,9 @@ class Dashboard extends CI_Controller {
 	{
             $dados['corretor'] = $this->Corretor->getNome();
             
-            $this->load->view('header');
-            $this->load->view('header_menu');
+            $this->Theme->header();
             $this->load->view('dashboard', $dados);
-            $this->load->view('footer');
+            $this->Theme->footer();
 	}
 }
 

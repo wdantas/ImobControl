@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('VerificarLogin','Corretor');
+$autoload['model'] = array('VerificarLogin','Corretor','Theme', 'VerificaExistencia', 'GetAll');
 
 
 /* End of file autoload.php */
